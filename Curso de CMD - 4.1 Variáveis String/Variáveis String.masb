@@ -1,0 +1,23 @@
+@echo off
+color 02
+mode 50,10
+
+title %date:/=-% - %time:~0,5%
+
+set /p nome=Digite seu nome: 
+set /p sobrenome=Digite seu sobrenome: 
+set /p idade=Digite sua idade: 
+set /p sexo=Digite seu sexo: 
+
+set nome_comp=%nome% %sobrenome%
+
+cls
+
+echo.
+echo Nome: %nome% 
+echo Sobrenome: %sobrenome%
+echo Nome Completo: %nome_comp%
+echo Idade: %idade% 
+echo Sexo: %sexo%
+
+pause >nul
